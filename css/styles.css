@@ -50,12 +50,19 @@ body {
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 0.75rem;
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
+    border-radius: 4px;
+    object-fit: contain;
 }
 
 .logo i {
     font-size: 2rem;
-    color: var(--primary-color);
+    color: var(--accent-color);
 }
 
 .logo h1 {
