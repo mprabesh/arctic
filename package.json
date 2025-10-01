@@ -6,9 +6,11 @@
   "scripts": {
     "start": "python -m http.server 8000",
     "serve": "npx http-server -p 8000 -o",
+    "dev": "npx http-server -p 8000 -o -c-1",
     "build": "echo 'Static site - no build required'",
-    "test": "echo 'No tests configured yet'",
-    "lint": "echo 'Linting not configured'"
+    "deploy": "echo 'Ready for static hosting deployment'",
+    "test": "echo 'No tests configured - pure static site'",
+    "lint": "echo 'No linting configured - could add HTML/CSS/JS validation'"
   },
   "repository": {
     "type": "git",
