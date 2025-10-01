@@ -1,0 +1,35 @@
+{
+  "name": "arctic-data-solutions-support-portal",
+  "version": "1.0.0",
+  "description": "User-friendly FAQ and support portal for Arctic Data Solutions document management system",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "serve": "npx http-server -p 8000 -o",
+    "build": "echo 'Static site - no build required'",
+    "test": "echo 'No tests configured yet'",
+    "lint": "echo 'Linting not configured'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arctic-data-solutions/support-portal"
+  },
+  "keywords": [
+    "support",
+    "faq", 
+    "portal",
+    "customer-service",
+    "document-management",
+    "arctic-data-solutions",
+    "devops",
+    "cloud-computing"
+  ],
+  "author": "Arctic Data Solutions DevOps Team",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

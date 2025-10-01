@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="theme-color" content="#2c5aa0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>Arctic Data Solutions - Support Portal</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%232c5aa0'/><text y='70' font-size='60' fill='white' text-anchor='middle' x='50'>❄</text></svg>">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-snowflake"></i>
+                <h1>Arctic Data Solutions</h1>
+            </div>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav" id="mainNav">
+                <a href="#home" class="nav-link active" onclick="closeMobileMenu()">Home</a>
+                <a href="#faq" class="nav-link" onclick="closeMobileMenu()">FAQ</a>
+                <a href="#contact" class="nav-link" onclick="closeMobileMenu()">Contact</a>
+                <a href="#status" class="nav-link" onclick="closeMobileMenu()">System Status</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h2>Document Management System Support</h2>
+                <p>Get help with your document migration and new system features</p>
+                
+                <!-- Quick Action Buttons -->
+                <div class="quick-actions">
+                    <button class="btn btn-primary" onclick="openTicket()">
+                        <i class="fas fa-ticket-alt"></i>
+                        Submit Support Ticket
+                    </button>
+                    <button class="btn btn-secondary" onclick="showChat()">
+                        <i class="fas fa-comments"></i>
+                        Live Chat Support
+                    </button>
+                    <button class="btn btn-info" onclick="scrollToFAQ()">
+                        <i class="fas fa-question-circle"></i>
+                        Browse FAQ
+                    </button>
+                </div>
+
+                <!-- System Status Alert -->
+                <div class="status-alert" id="systemStatus">
+                    <i class="fas fa-info-circle"></i>
+                    <span>Current Response Time: <strong>72 hours</strong> - We're working to improve this to 24 hours</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Search Section -->
+        <section class="search-section">
+            <div class="container">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search for help articles, FAQs, or solutions..." />
+                    <button onclick="performSearch()">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div id="searchResults" class="search-results hidden"></div>
+            </div>
+        </section>
+
+        <!-- Popular Issues -->
+        <section class="popular-issues">
+            <div class="container">
+                <h3>Most Common Issues This Week</h3>
+                <div class="issue-grid">
+                    <div class="issue-card urgent">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <h4>Login Problems</h4>
+                        <p>Can't access the new document system</p>
+                        <span class="issue-count">127 reports</span>
+                    </div>
+                    <div class="issue-card high">
+                        <i class="fas fa-upload"></i>
+                        <h4>File Upload Errors</h4>
+                        <p>Documents failing to upload or sync</p>
+                        <span class="issue-count">89 reports</span>
+                    </div>
+                    <div class="issue-card medium">
+                        <i class="fas fa-search"></i>
+                        <h4>Can't Find Documents</h4>
+                        <p>Migrated files are missing or hard to locate</p>
+                        <span class="issue-count">76 reports</span>
+                    </div>
+                    <div class="issue-card medium">
+                        <i class="fas fa-cog"></i>
+                        <h4>Interface Confusion</h4>
+                        <p>New interface is difficult to navigate</p>
+                        <span class="issue-count">54 reports</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq-section">
+            <div class="container">
+                <h3>Frequently Asked Questions <span id="faqCounter" class="faq-counter"></span></h3>
+                <div class="faq-categories-wrapper">
+                    <div class="faq-categories">
+                        <button class="category-btn active" data-category="all">All</button>
+                        <button class="category-btn" data-category="login">Login & Access</button>
+                        <button class="category-btn" data-category="upload">File Management</button>
+                        <button class="category-btn" data-category="migration">Migration Issues</button>
+                        <button class="category-btn" data-category="interface">Interface Help</button>
+                        <button class="category-btn" data-category="gdpr">GDPR & Security</button>
+                        <button class="category-btn" data-category="sharing">Sharing & Collaboration</button>
+                        <button class="category-btn" data-category="performance">Performance</button>
+                        <button class="category-btn" data-category="mobile">Mobile Access</button>
+                        <button class="category-btn" data-category="training">Training & Help</button>
+                    </div>
+                    <div class="scroll-hint" id="scrollHint">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+
+                <div class="faq-container" id="faqContainer">
+                    <!-- FAQ items will be loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h3>Still Need Help?</h3>
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <i class="fas fa-ticket-alt"></i>
+                        <h4>Support Ticket</h4>
+                        <p>For complex issues requiring detailed investigation</p>
+                        <p><strong>Response Time:</strong> 72 hours (improving to 24h)</p>
+                        <button class="btn btn-primary" onclick="openTicketForm()">Create Ticket</button>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <h4>Phone Support</h4>
+                        <p>For urgent issues requiring immediate assistance</p>
+                        <p><strong>Hours:</strong> Mon-Fri 8AM-6PM CST</p>
+                        <p><strong>Phone:</strong> 1-800-ARCTIC-1</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-comments"></i>
+                        <h4>Live Chat</h4>
+                        <p>Quick help for simple questions</p>
+                        <p><strong>Available:</strong> Mon-Fri 9AM-5PM CST</p>
+                        <button class="btn btn-secondary" onclick="startChat()">Start Chat</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Arctic Data Solutions. All rights reserved.</p>
+            <p>Emergency Support: <a href="mailto:emergency@arcticdata.com">emergency@arcticdata.com</a></p>
+        </div>
+    </footer>
+
+    <!-- Support Ticket Modal -->
+    <div id="ticketModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3>Submit Support Ticket</h3>
+            <form id="ticketForm">
+                <div class="form-group">
+                    <label for="priority">Priority Level</label>
+                    <select id="priority" required>
+                        <option value="low">Low - General Question</option>
+                        <option value="medium">Medium - System Issue</option>
+                        <option value="high">High - Can't Work</option>
+                        <option value="urgent">Urgent - System Down</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="category">Issue Category</label>
+                    <select id="category" required>
+                        <option value="login">Login/Access Problems</option>
+                        <option value="upload">File Upload Issues</option>
+                        <option value="migration">Document Migration</option>
+                        <option value="interface">Interface Problems</option>
+                        <option value="performance">System Performance</option>
+                        <option value="gdpr">GDPR/Security Concerns</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" required placeholder="Brief description of your issue">
+                </div>
+                <div class="form-group">
+                    <label for="description">Detailed Description</label>
+                    <textarea id="description" required placeholder="Please describe your issue in detail, including any error messages and steps you've tried"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="attachment">Attach Screenshot (optional)</label>
+                    <input type="file" id="attachment" accept="image/*,.pdf">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Ticket</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

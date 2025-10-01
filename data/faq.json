@@ -1,0 +1,298 @@
+{
+  "faqData": [
+    {
+      "id": 1,
+      "category": "login",
+      "question": "I can't log into the new document management system",
+      "answer": "<strong>Quick Fix:</strong><br>1. Clear your browser cache and cookies<br>2. Try using an incognito/private browser window<br>3. Ensure you're using your corporate email address<br>4. Check if your password contains special characters (temporary limitation)<br><br><strong>Still having issues?</strong><br>Your login credentials from the old system may need to be reset. Contact IT support for immediate password reset.<br><br><strong>Known Issue:</strong> Single Sign-On (SSO) integration is still being configured. Expected resolution: Within 48 hours.",
+      "tags": ["login", "password", "sso", "credentials"]
+    },
+    {
+      "id": 2,
+      "category": "login",
+      "question": "I keep getting logged out frequently",
+      "answer": "<strong>This is a known security enhancement that we're adjusting:</strong><br><br><strong>Current Settings:</strong><br>• Auto-logout: 30 minutes of inactivity<br>• Session timeout: 8 hours maximum<br>• Multiple device limit: 3 concurrent sessions<br><br><strong>Stay Logged In:</strong><br>• Check \"Remember me\" on login (extends to 24 hours)<br>• Enable \"Keep me active\" in Settings > Security<br>• Use the desktop app for persistent sessions<br><br><strong>Coming Soon:</strong><br>We're implementing \"smart timeout\" that learns your usage patterns and adjusts accordingly. Rolling out next week.<br><br><strong>Immediate workaround:</strong> Keep a browser tab open with the system - it counts as activity.",
+      "tags": ["logout", "session", "timeout", "security"]
+    },
+    {
+      "id": 3,
+      "category": "login",
+      "question": "My password doesn't work after the migration",
+      "answer": "<strong>Password Reset Required:</strong><br><br>Due to enhanced security measures, all passwords were reset during migration.<br><br><strong>To reset your password:</strong><br>1. Click \"Forgot Password\" on the login page<br>2. Enter your corporate email address<br>3. Check your email for reset instructions<br>4. Create a new password (minimum 12 characters)<br><br><strong>Password Requirements:</strong><br>• At least 12 characters long<br>• Include uppercase and lowercase letters<br>• Include at least one number<br>• Include at least one special character<br><br><strong>Still not working?</strong> Contact IT helpdesk at ext. 2200.",
+      "tags": ["password", "reset", "migration", "security"]
+    },
+    {
+      "id": 4,
+      "category": "login",
+      "question": "Can I use my Active Directory credentials?",
+      "answer": "<strong>Active Directory Integration Status:</strong><br><br><strong>Currently:</strong> AD integration is being configured and tested<br><strong>Timeline:</strong> Expected to be live within 72 hours<br><strong>Temporary Solution:</strong> Use the password reset process to create system-specific credentials<br><br><strong>Once AD is active:</strong><br>• Use your Windows login credentials<br>• Single sign-on from company computers<br>• Automatic password synchronization<br><br><strong>Notification:</strong> You'll receive an email when AD integration is complete.",
+      "tags": ["active directory", "ad", "integration", "sso"]
+    },
+    {
+      "id": 5,
+      "category": "login",
+      "question": "I get an error message 'Account Locked' when trying to log in",
+      "answer": "<strong>Account Lockout Protection:</strong><br><br>Your account is temporarily locked after 5 failed login attempts.<br><br><strong>Automatic Unlock:</strong><br>• Accounts unlock automatically after 30 minutes<br>• No action required on your part<br><br><strong>Immediate Unlock:</strong><br>• Contact IT support at ext. 2200<br>• Provide your employee ID and email<br>• Verification required for security<br><br><strong>Prevent Future Lockouts:</strong><br>• Use the \"Forgot Password\" link instead of guessing<br>• Ensure Caps Lock is off<br>• Copy/paste passwords carefully",
+      "tags": ["locked", "account", "security", "unlock"]
+    },
+    {
+      "id": 6,
+      "category": "upload",
+      "question": "My files won't upload or I get upload errors",
+      "answer": "<strong>Common Solutions:</strong><br>• File size limit: 50MB per file (increased from 25MB last week)<br>• Supported formats: PDF, DOC, DOCX, XLS, XLSX, PPT, PPTX, TXT, JPG, PNG<br>• Check your internet connection stability<br>• Try uploading one file at a time instead of batch uploads<br><br><strong>Error Code Reference:</strong><br>• Error 413: File too large<br>• Error 415: Unsupported file type<br>• Error 500: Server issue - try again in 10 minutes<br><br>If uploads still fail, use the \"Emergency Upload\" feature in the top menu.",
+      "tags": ["upload", "file size", "error", "formats"]
+    },
+    {
+      "id": 7,
+      "category": "upload",
+      "question": "Can I upload multiple files at once?",
+      "answer": "<strong>Yes! Here are your bulk upload options:</strong><br><br><strong>Drag & Drop:</strong><br>• Select multiple files in your file explorer<br>• Drag them directly into any folder in the web interface<br>• Maximum 20 files at once<br><br><strong>Folder Upload:</strong><br>• Click \"Upload\" > \"Upload Folder\"<br>• Select an entire folder to maintain structure<br>• Works with nested subfolders<br><br><strong>Bulk Upload Tool:</strong><br>• For 100+ files, use the desktop sync client<br>• Download from: Tools > Desktop Sync<br>• Supports background uploads and resume capability<br><br><strong>Pro Tip:</strong> Large batches upload faster during off-peak hours (6 PM - 8 AM EST).",
+      "tags": ["bulk upload", "multiple files", "drag drop", "batch"]
+    },
+    {
+      "id": 8,
+      "category": "upload",
+      "question": "What file types are supported?",
+      "answer": "<strong>Supported File Types:</strong><br><br><strong>Documents:</strong><br>• PDF, DOC, DOCX, RTF, TXT<br>• XLS, XLSX, CSV<br>• PPT, PPTX<br>• ODT, ODS, ODP<br><br><strong>Images:</strong><br>• JPG, JPEG, PNG, GIF<br>• BMP, TIFF, SVG<br><br><strong>Archives:</strong><br>• ZIP, RAR, 7Z<br><br><strong>Other:</strong><br>• MP4, AVI (video files under 100MB)<br>• MP3, WAV (audio files)<br><br><strong>Not Supported:</strong><br>• Executable files (.exe, .bat)<br>• System files<br>• Files with special characters in names",
+      "tags": ["file types", "formats", "supported", "documents"]
+    },
+    {
+      "id": 9,
+      "category": "upload",
+      "question": "My upload keeps failing at 99%",
+      "answer": "<strong>Upload Interruption Solutions:</strong><br><br><strong>Common Causes:</strong><br>• Network instability during final processing<br>• Server timeout during virus scanning<br>• File corruption during transfer<br><br><strong>Try These Steps:</strong><br>1. Wait 5 minutes and try again<br>2. Use a wired internet connection if possible<br>3. Close other applications using bandwidth<br>4. Try uploading during off-peak hours<br><br><strong>Alternative Methods:</strong><br>• Use the desktop sync client<br>• Break large files into smaller parts<br>• Contact IT for large file assistance<br><br><strong>If problem persists:</strong> The file may be corrupted. Try re-creating or re-saving the file.",
+      "tags": ["upload failure", "99%", "network", "timeout"]
+    },
+    {
+      "id": 10,
+      "category": "upload",
+      "question": "How do I upload files larger than 50MB?",
+      "answer": "<strong>Large File Upload Options:</strong><br><br><strong>Desktop Sync Client:</strong><br>• Download from Tools > Desktop Sync<br>• Supports files up to 2GB<br>• Background uploading with resume capability<br><br><strong>Large File Transfer:</strong><br>• Use the \"Large File Upload\" feature<br>• Available in the Upload menu<br>• Supports up to 1GB per file<br>• Requires special approval for 500MB+ files<br><br><strong>Alternative Solutions:</strong><br>• Compress files using ZIP or RAR<br>• Split large files into smaller parts<br>• Contact IT for files larger than 2GB<br><br><strong>Business Users:</strong> Premium accounts support up to 5GB files.",
+      "tags": ["large files", "50mb", "sync client", "compression"]
+    },
+    {
+      "id": 11,
+      "category": "migration",
+      "question": "I can't find my old documents after the migration",
+      "answer": "<strong>Your documents are safe!</strong> Here's how to find them:<br><br>1. <strong>Use the Advanced Search:</strong> Click the search icon and try searching by date range or partial filename<br>2. <strong>Check the \"Migrated Files\" folder:</strong> All old documents are initially placed here<br>3. <strong>Use the Migration Tracker:</strong> Go to Tools > Migration Status to see your file transfer progress<br><br><strong>Still missing files?</strong><br>• Migration is still in progress for files larger than 100MB<br>• Files from shared drives take 24-48 hours longer<br>• Archive files (.zip, .rar) are processed last<br><br><strong>Emergency Access:</strong> If you need a specific file immediately, email the filename to recovery@arcticdata.com",
+      "tags": ["missing files", "migration", "old documents", "recovery"]
+    },
+    {
+      "id": 12,
+      "category": "migration",
+      "question": "Some of my file permissions seem to have changed",
+      "answer": "<strong>Permission Migration is Complex - Here's What Happened:</strong><br><br><strong>Automatic Changes:</strong><br>• All files default to \"Private\" during migration for security<br>• Previous \"Everyone\" permissions are now \"Department Only\"<br>• External sharing links were disabled and need to be recreated<br><br><strong>Restore Your Permissions:</strong><br>1. Right-click the file/folder > \"Sharing Settings\"<br>2. Use \"Bulk Permission Editor\" for multiple files<br>3. Import old permissions: Tools > Migration > \"Import Permissions\"<br><br><strong>New Permission Levels:</strong><br>• Private: Only you<br>• Team: Your immediate team<br>• Department: Your department<br>• Company: All employees<br>• External: Outside partners (requires approval)<br><br><strong>Need Help?</strong> Contact your IT administrator to bulk-restore department permissions.",
+      "tags": ["permissions", "sharing", "migration", "access"]
+    },
+    {
+      "id": 13,
+      "category": "migration",
+      "question": "How long will the migration process take?",
+      "answer": "<strong>Migration Timeline:</strong><br><br><strong>Personal Files:</strong><br>• Small files (under 10MB): Complete<br>• Medium files (10-100MB): 90% complete, finishing by end of week<br>• Large files (over 100MB): 60% complete, 2-3 weeks remaining<br><br><strong>Shared Drives:</strong><br>• Department folders: 75% complete<br>• Archive data: 40% complete<br>• Legacy systems: Starting next month<br><br><strong>Priority Files:</strong><br>• Current projects: Complete<br>• Frequently accessed: 95% complete<br>• Archive data: Lower priority<br><br><strong>Get Updates:</strong> Check Tools > Migration Status for real-time progress of your files.",
+      "tags": ["migration timeline", "progress", "completion", "status"]
+    },
+    {
+      "id": 14,
+      "category": "migration",
+      "question": "My folder structure looks different after migration",
+      "answer": "<strong>Folder Structure Changes:</strong><br><br><strong>What Changed:</strong><br>• Deep nested folders (10+ levels) were flattened<br>• Duplicate folder names were numbered<br>• Special characters in folder names were removed<br>• Empty folders were archived separately<br><br><strong>New Organization:</strong><br>• Personal > [Your Name] > [Original Folders]<br>• Shared > [Department] > [Team Folders]<br>• Archive > [Old System Backups]<br><br><strong>Restore Original Structure:</strong><br>1. Use the \"Folder Mapping Tool\" in Migration menu<br>2. Recreate custom folder structures manually<br>3. Use tags to organize files differently<br><br><strong>Best Practice:</strong> The new structure is designed for better security and faster access.",
+      "tags": ["folder structure", "organization", "nested folders", "mapping"]
+    },
+    {
+      "id": 15,
+      "category": "migration",
+      "question": "Some files show as 'corrupted' after migration",
+      "answer": "<strong>File Corruption During Migration:</strong><br><br><strong>Common Causes:</strong><br>• Network interruption during transfer<br>• Original file was already damaged<br>• Incompatible file format conversion<br><br><strong>Recovery Options:</strong><br>1. Check the \"Migration Backups\" folder<br>2. Request file recovery from backup systems<br>3. Contact original file owner for a fresh copy<br><br><strong>Prevention for Future:</strong><br>• Use the desktop sync client for important files<br>• Verify files immediately after migration<br>• Report corruption within 30 days for recovery<br><br><strong>Emergency Recovery:</strong> Contact recovery@arcticdata.com with the file path and approximate date modified.",
+      "tags": ["corruption", "recovery", "backup", "damaged files"]
+    },
+    {
+      "id": 16,
+      "category": "interface",
+      "question": "The new interface is confusing - where is everything?",
+      "answer": "<strong>We understand the frustration! Here's a quick orientation:</strong><br><br><strong>Main Navigation:</strong><br>• <strong>Dashboard:</strong> Your recent files and quick actions<br>• <strong>My Documents:</strong> All your personal files<br>• <strong>Shared:</strong> Team and department folders<br>• <strong>Recent:</strong> Last 50 files you accessed<br>• <strong>Favorites:</strong> Star important files for quick access<br><br><strong>Quick Tips:</strong><br>• Right-click any file for a context menu with all actions<br>• Use Ctrl+F to search within the current folder<br>• Click the \"?\" icon in the top right for interactive help<br>• Switch to \"Classic View\" in Settings if you prefer the old layout<br><br><strong>Need more help?</strong> Watch our 5-minute interface walkthrough video: <a href=\"#video-tutorial\">Interface Tutorial</a>",
+      "tags": ["interface", "navigation", "layout", "tutorial"]
+    },
+    {
+      "id": 17,
+      "category": "interface",
+      "question": "How do I organize my files in the new system?",
+      "answer": "<strong>File Organization Made Simple:</strong><br><br><strong>Folder Management:</strong><br>• Create folders by clicking the \"+\" button in any directory<br>• Drag and drop files between folders<br>• Use color coding: Right-click folder > \"Change Color\"<br>• Set folder permissions for team sharing<br><br><strong>Tags and Labels:</strong><br>• Add tags to files for easy searching<br>• Use predefined labels: Urgent, Review, Archive, Draft<br>• Create custom tags for your workflow<br><br><strong>Smart Organization:</strong><br>• Auto-sort by date, name, or file type<br>• Use \"Smart Folders\" that auto-populate based on criteria<br>• Set up automated filing rules in Settings > Auto-Organization",
+      "tags": ["organization", "folders", "tags", "smart folders"]
+    },
+    {
+      "id": 18,
+      "category": "interface",
+      "question": "Where is the search function?",
+      "answer": "<strong>Search Function Locations:</strong><br><br><strong>Global Search:</strong><br>• Top navigation bar (magnifying glass icon)<br>• Keyboard shortcut: Ctrl+F (Windows) or Cmd+F (Mac)<br>• Voice search: Click microphone icon<br><br><strong>Advanced Search:</strong><br>• Click \"Advanced\" next to the search box<br>• Filter by file type, date, size, or owner<br>• Save frequent searches as \"Smart Folders\"<br><br><strong>Search Tips:</strong><br>• Use quotes for exact phrases: \"project report\"<br>• Wildcard searches: project* finds \"project1\", \"projects\", etc.<br>• Date ranges: modified:2024-01-01..2024-12-31<br><br><strong>Quick Search:</strong> Start typing in any folder view to search within that folder.",
+      "tags": ["search", "find", "advanced search", "shortcuts"]
+    },
+    {
+      "id": 19,
+      "category": "interface",
+      "question": "How do I switch between different view modes?",
+      "answer": "<strong>View Mode Options:</strong><br><br><strong>Available Views:</strong><br>• List View: Detailed file information in rows<br>• Grid View: Thumbnail previews in a grid<br>• Card View: Large thumbnails with metadata<br>• Timeline View: Files organized by date<br><br><strong>Switch Views:</strong><br>• View menu in the top toolbar<br>• Keyboard shortcuts: 1, 2, 3, 4 for each view<br>• Right-click in empty space > \"View Options\"<br><br><strong>Customize Views:</strong><br>• Choose which columns to show in List View<br>• Adjust thumbnail size in Grid View<br>• Set default view per folder<br><br><strong>Pro Tip:</strong> Different views work better for different tasks - use List for detailed info, Grid for visual files.",
+      "tags": ["view modes", "display", "grid view", "list view"]
+    },
+    {
+      "id": 20,
+      "category": "interface",
+      "question": "Can I customize the dashboard?",
+      "answer": "<strong>Dashboard Customization:</strong><br><br><strong>Widget Options:</strong><br>• Recent Files: Show your last accessed documents<br>• Quick Actions: Frequently used buttons<br>• Team Activity: See what colleagues are working on<br>• Storage Usage: Monitor your space usage<br>• Announcements: Important system updates<br><br><strong>Customize Layout:</strong><br>1. Click \"Customize Dashboard\" in the top right<br>2. Drag widgets to reorder them<br>3. Click the X to remove unwanted widgets<br>4. Use \"+\" to add new widgets<br><br><strong>Personal Settings:</strong><br>• Set how many recent files to show (5-50)<br>• Choose dark or light theme<br>• Enable/disable notifications<br><br><strong>Reset Option:</strong> Click \"Reset to Default\" if you want to start over.",
+      "tags": ["dashboard", "customization", "widgets", "layout"]
+    },
+    {
+      "id": 21,
+      "category": "gdpr",
+      "question": "What about GDPR compliance and data security in the new system?",
+      "answer": "<strong>Your data security is our top priority:</strong><br><br><strong>GDPR Compliance:</strong><br>• All personal data is encrypted at rest and in transit<br>• Data processing logs are maintained for audit purposes<br>• Right to deletion: Use \"Request Data Removal\" in your profile<br>• Data portability: Export your data anytime via \"Export My Data\"<br><br><strong>Security Features:</strong><br>• Two-factor authentication (2FA) - now mandatory<br>• End-to-end encryption for sensitive documents<br>• Automatic logout after 30 minutes of inactivity<br>• Regular security audits and penetration testing<br><br><strong>Data Location:</strong> All data is stored in EU-compliant data centers in Ireland and Germany.<br><br>For specific GDPR requests, contact: gdpr@arcticdata.com",
+      "tags": ["gdpr", "compliance", "security", "privacy"]
+    },
+    {
+      "id": 22,
+      "category": "gdpr",
+      "question": "How do I request my personal data?",
+      "answer": "<strong>Data Subject Access Request:</strong><br><br><strong>Self-Service Option:</strong><br>1. Go to Settings > Privacy & Data<br>2. Click \"Request My Data\"<br>3. Choose data categories to include<br>4. Select export format (JSON, CSV, or PDF)<br>5. Receive download link within 72 hours<br><br><strong>What's Included:</strong><br>• All your uploaded files<br>• Account information and settings<br>• Access logs and activity history<br>• Shared file permissions<br><br><strong>Formal Request:</strong><br>• Email gdpr@arcticdata.com<br>• Include your full name and employee ID<br>• Specify the data you're requesting<br>• Response within 30 days as required by law",
+      "tags": ["data request", "personal data", "export", "privacy"]
+    },
+    {
+      "id": 23,
+      "category": "gdpr",
+      "question": "Can I delete my data permanently?",
+      "answer": "<strong>Right to Erasure (Right to be Forgotten):</strong><br><br><strong>Employee Data:</strong><br>• Personal files can be deleted immediately<br>• Shared files require manager approval<br>• System logs are anonymized after 90 days<br>• Backup data is purged after 1 year<br><br><strong>Deletion Process:</strong><br>1. Settings > Privacy & Data > \"Delete My Data\"<br>2. Select which data to delete<br>3. Confirm with manager if required<br>4. Receive confirmation within 5 business days<br><br><strong>Limitations:</strong><br>• Legal hold data cannot be deleted<br>• Financial records have 7-year retention<br>• Anonymized analytics data may remain<br><br><strong>Complete Account Deletion:</strong> Contact HR and IT when leaving the company.",
+      "tags": ["delete data", "right to erasure", "permanent deletion", "gdpr"]
+    },
+    {
+      "id": 24,
+      "category": "gdpr",
+      "question": "Where is my data stored geographically?",
+      "answer": "<strong>Data Storage Locations:</strong><br><br><strong>Primary Storage:</strong><br>• EU Region: Dublin, Ireland (Primary)<br>• EU Region: Frankfurt, Germany (Backup)<br>• All data remains within EU jurisdiction<br><br><strong>Data Processing:</strong><br>• No data transferred outside the EU<br>• GDPR-compliant cloud providers only<br>• Regular compliance audits<br><br><strong>Backup Strategy:</strong><br>• Real-time replication between EU data centers<br>• 30-day backup retention<br>• Disaster recovery within EU only<br><br><strong>Certification:</strong><br>• ISO 27001 certified facilities<br>• SOC 2 Type II compliant<br>• Regular third-party security assessments<br><br><strong>Data Residency Guarantee:</strong> Your data will never leave the European Union.",
+      "tags": ["data location", "eu storage", "jurisdiction", "compliance"]
+    },
+    {
+      "id": 25,
+      "category": "performance",
+      "question": "The system is running slowly",
+      "answer": "<strong>Performance Optimization Tips:</strong><br><br><strong>Immediate Solutions:</strong><br>• Clear browser cache and cookies<br>• Close unnecessary browser tabs<br>• Disable browser extensions temporarily<br>• Try incognito/private mode<br><br><strong>Network Issues:</strong><br>• Check your internet speed (minimum 5 Mbps recommended)<br>• Switch to wired connection if using WiFi<br>• Avoid peak usage times (9-11 AM, 1-3 PM)<br><br><strong>System Status:</strong><br>• Check system status at status.arcticdata.com<br>• Known performance issues during backup hours (2-4 AM)<br>• Maintenance windows announced in advance<br><br><strong>Still Slow?</strong> Contact IT with your location and specific actions that are slow.",
+      "tags": ["performance", "slow", "speed", "optimization"]
+    },
+    {
+      "id": 26,
+      "category": "performance",
+      "question": "File downloads are taking too long",
+      "answer": "<strong>Download Speed Optimization:</strong><br><br><strong>Quick Fixes:</strong><br>• Pause other downloads/uploads<br>• Close streaming services and cloud syncing<br>• Use download manager for large files<br>• Try downloading during off-peak hours<br><br><strong>File Size Considerations:</strong><br>• Files over 100MB: 5-15 minutes normal<br>• Multiple files: Download as ZIP for faster transfer<br>• Preview instead of downloading for quick viewing<br><br><strong>Network Optimization:</strong><br>• Use wired connection for large downloads<br>• Check with IT about bandwidth limitations<br>• VPN connections may be slower<br><br><strong>Alternative Options:</strong><br>• Use desktop sync client for automatic downloads<br>• Stream documents instead of downloading<br>• Request compressed versions for large files",
+      "tags": ["download speed", "file transfer", "bandwidth", "optimization"]
+    },
+    {
+      "id": 27,
+      "category": "sharing",
+      "question": "How do I share files with external partners?",
+      "answer": "<strong>External Sharing Process:</strong><br><br><strong>Security Requirements:</strong><br>• Manager approval required for external sharing<br>• Maximum 30-day share duration<br>• Password protection mandatory<br>• Download tracking enabled<br><br><strong>Share Steps:</strong><br>1. Right-click file > \"Share Externally\"<br>2. Enter recipient email and message<br>3. Set expiration date (max 30 days)<br>4. Choose permissions (View Only recommended)<br>5. Submit for approval<br><br><strong>Approval Process:</strong><br>• Manager notified within 1 hour<br>• Typical approval time: 4-8 hours<br>• Emergency requests: Call manager directly<br><br><strong>Security Features:</strong><br>• Watermarked downloads<br>• Access logging and reporting<br>• Automatic expiration<br>• Revoke access anytime",
+      "tags": ["external sharing", "partners", "approval", "security"]
+    },
+    {
+      "id": 28,
+      "category": "sharing",
+      "question": "Can I share folders with my team?",
+      "answer": "<strong>Team Folder Sharing:</strong><br><br><strong>Department Folders:</strong><br>• Automatic access based on your department<br>• No approval needed for team members<br>• Managed by department administrators<br><br><strong>Project Folders:</strong><br>1. Create folder in \"Shared\" section<br>2. Right-click > \"Manage Permissions\"<br>3. Add team members by name or group<br>4. Set permission levels (View, Edit, Admin)<br><br><strong>Permission Levels:</strong><br>• View: Can see and download files<br>• Edit: Can modify and upload files<br>• Admin: Can manage permissions and delete<br><br><strong>Best Practices:</strong><br>• Use groups instead of individual permissions<br>• Review permissions monthly<br>• Remove access when team members change roles<br><br><strong>Bulk Management:</strong> Use \"Team Management\" tool for large teams.",
+      "tags": ["team sharing", "folders", "permissions", "collaboration"]
+    },
+    {
+      "id": 29,
+      "category": "sharing",
+      "question": "How do I create a public link for a file?",
+      "answer": "<strong>Public Link Creation:</strong><br><br><strong>Important:</strong> Public links are disabled by default for security.<br><br><strong>Request Public Link:</strong><br>1. Right-click file > \"Request Public Link\"<br>2. Provide business justification<br>3. Set expiration date (maximum 7 days)<br>4. Submit for IT security approval<br><br><strong>Approval Criteria:</strong><br>• Business necessity demonstrated<br>• No sensitive information in file<br>• Compliance with data policy<br>• Manager endorsement required<br><br><strong>Alternative Solutions:</strong><br>• Use external sharing with password protection<br>• Create temporary guest accounts<br>• Use secure file transfer service<br><br><strong>Security Note:</strong> Public links are logged and monitored for compliance.",
+      "tags": ["public link", "sharing", "security approval", "compliance"]
+    },
+    {
+      "id": 30,
+      "category": "mobile",
+      "question": "Is there a mobile app for the document system?",
+      "answer": "<strong>Mobile Access Options:</strong><br><br><strong>Mobile Web App:</strong><br>• Fully responsive web interface<br>• Works on all smartphones and tablets<br>• No app download required<br>• Full feature access<br><br><strong>Native App (Coming Soon):</strong><br>• iOS and Android apps in development<br>• Expected release: Q2 2025<br>• Offline file access<br>• Push notifications for shares<br><br><strong>Current Mobile Features:</strong><br>• Upload photos from camera<br>• View and edit documents<br>• Share files and folders<br>• Receive notifications<br><br><strong>Optimize Mobile Experience:</strong><br>• Add to home screen for app-like experience<br>• Enable location services for auto-tagging<br>• Use mobile data efficiently",
+      "tags": ["mobile app", "smartphone", "tablet", "responsive"]
+    },
+    {
+      "id": 31,
+      "category": "mobile",
+      "question": "Can I upload photos from my phone?",
+      "answer": "<strong>Photo Upload from Mobile:</strong><br><br><strong>Direct Camera Upload:</strong><br>1. Open the web app on your phone<br>2. Click \"+\" or \"Upload\" button<br>3. Choose \"Take Photo\" or \"Camera\"<br>4. Capture image and confirm<br>5. Add description and tags<br><br><strong>Photo Gallery Upload:</strong><br>• Select multiple photos from gallery<br>• Automatic compression for faster upload<br>• EXIF data preserved (location, date)<br><br><strong>Features:</strong><br>• Auto-rotation correction<br>• Smart compression (reduces file size)<br>• Batch upload up to 50 photos<br>• GPS tagging (if enabled)<br><br><strong>Privacy Settings:</strong><br>• Remove location data option<br>• Private upload by default<br>• Easy sharing after upload",
+      "tags": ["photo upload", "camera", "mobile", "batch upload"]
+    },
+    {
+      "id": 32,
+      "category": "notifications",
+      "question": "How do I control my notification settings?",
+      "answer": "<strong>Notification Management:</strong><br><br><strong>Access Settings:</strong><br>1. Click your profile picture<br>2. Select \"Notification Settings\"<br>3. Choose notification types and frequency<br><br><strong>Notification Types:</strong><br>• File shares: When someone shares with you<br>• Comments: When someone comments on your files<br>• System updates: Important announcements<br>• Security alerts: Login and security events<br><br><strong>Delivery Options:</strong><br>• Email notifications (immediate or daily digest)<br>• Browser notifications (while logged in)<br>• Mobile notifications (coming with app)<br><br><strong>Smart Notifications:</strong><br>• Quiet hours: No notifications 6 PM - 8 AM<br>• Vacation mode: Pause all non-urgent notifications<br>• Priority contacts: Always notify for specific people",
+      "tags": ["notifications", "settings", "email", "alerts"]
+    },
+    {
+      "id": 33,
+      "category": "backup",
+      "question": "Are my files automatically backed up?",
+      "answer": "<strong>Automatic Backup System:</strong><br><br><strong>Backup Schedule:</strong><br>• Real-time: Changes saved immediately<br>• Incremental: Every 4 hours<br>• Full backup: Daily at 2 AM<br>• Archive backup: Weekly<br><br><strong>What's Backed Up:</strong><br>• All uploaded files and documents<br>• Folder structure and permissions<br>• File version history (30 days)<br>• User settings and preferences<br><br><strong>Backup Locations:</strong><br>• Primary: Dublin, Ireland<br>• Secondary: Frankfurt, Germany<br>• Archive: Secure offline storage<br><br><strong>Recovery Options:</strong><br>• Self-service: Restore deleted files (30 days)<br>• IT assistance: Restore from archive (up to 1 year)<br>• Disaster recovery: Full system restore capability<br><br><strong>Your Action Required:</strong> None - everything is automatic!",
+      "tags": ["backup", "automatic", "recovery", "restore"]
+    },
+    {
+      "id": 34,
+      "category": "backup",
+      "question": "Can I restore a previous version of a file?",
+      "answer": "<strong>File Version Control:</strong><br><br><strong>Version History:</strong><br>• Automatic versions saved on each edit<br>• Up to 50 versions per file<br>• 30-day version retention<br>• Major versions marked separately<br><br><strong>Restore Previous Version:</strong><br>1. Right-click file > \"Version History\"<br>2. Browse available versions with timestamps<br>3. Preview changes between versions<br>4. Click \"Restore\" on desired version<br><br><strong>Version Information:</strong><br>• Who made changes<br>• When changes were made<br>• Size of changes<br>• Comments (if added)<br><br><strong>Best Practices:</strong><br>• Add version comments for major changes<br>• Download important versions locally<br>• Use \"Save Major Version\" for milestones<br><br><strong>Enterprise Feature:</strong> Extended version history (1 year) available for premium accounts.",
+      "tags": ["version control", "restore", "history", "previous version"]
+    },
+    {
+      "id": 35,
+      "category": "integration",
+      "question": "Can I connect this with Microsoft Office?",
+      "answer": "<strong>Microsoft Office Integration:</strong><br><br><strong>Office Online:</strong><br>• Edit documents directly in browser<br>• Real-time collaboration<br>• Automatic saving to document system<br>• Full formatting support<br><br><strong>Desktop Office:</strong><br>• Install the Arctic Data Add-in<br>• Open/save directly from Word, Excel, PowerPoint<br>• Sync with OneDrive alternative<br><br><strong>Setup Instructions:</strong><br>1. Download add-in from Tools > Integrations<br>2. Install in Office applications<br>3. Sign in with your system credentials<br>4. Access files through Arctic Data tab<br><br><strong>Supported Versions:</strong><br>• Office 365/Microsoft 365<br>• Office 2019, 2021<br>• Office for Mac (latest version)<br><br><strong>Co-authoring:</strong> Multiple people can edit documents simultaneously.",
+      "tags": ["office integration", "microsoft office", "add-in", "collaboration"]
+    },
+    {
+      "id": 36,
+      "category": "integration",
+      "question": "Does this work with Google Workspace?",
+      "answer": "<strong>Google Workspace Integration:</strong><br><br><strong>Available Integrations:</strong><br>• Google Drive sync (read-only import)<br>• Gmail attachment saving<br>• Google Docs collaborative editing<br>• Calendar integration for file sharing<br><br><strong>Setup Process:</strong><br>1. Go to Settings > Integrations<br>2. Click \"Connect Google Workspace\"<br>3. Authorize with your Google account<br>4. Choose sync preferences<br><br><strong>Sync Options:</strong><br>• Import existing Google Drive files<br>• Auto-save Gmail attachments<br>• Two-way calendar integration<br>• Contact list synchronization<br><br><strong>Limitations:</strong><br>• Google Docs remain in Google format<br>• Real-time sync requires premium account<br>• Some advanced features not supported<br><br><strong>Migration Tool:</strong> Bulk import from Google Drive available.",
+      "tags": ["google workspace", "drive sync", "gmail", "integration"]
+    },
+    {
+      "id": 37,
+      "category": "troubleshooting",
+      "question": "I'm getting JavaScript errors in my browser",
+      "answer": "<strong>JavaScript Error Resolution:</strong><br><br><strong>Common Causes:</strong><br>• Outdated browser version<br>• Browser extensions interfering<br>• Cached files corrupted<br>• Ad blockers too aggressive<br><br><strong>Quick Fixes:</strong><br>1. Hard refresh: Ctrl+F5 (Windows) or Cmd+Shift+R (Mac)<br>2. Clear browser cache and cookies<br>3. Disable browser extensions temporarily<br>4. Try incognito/private mode<br><br><strong>Browser Support:</strong><br>• Chrome: Version 90+<br>• Firefox: Version 88+<br>• Safari: Version 14+<br>• Edge: Version 90+<br><br><strong>Still Having Issues?</strong><br>• Try a different browser<br>• Check console errors (F12 > Console)<br>• Contact IT with error details and browser version",
+      "tags": ["javascript errors", "browser issues", "troubleshooting", "compatibility"]
+    },
+    {
+      "id": 38,
+      "category": "troubleshooting",
+      "question": "The page won't load properly",
+      "answer": "<strong>Page Loading Issues:</strong><br><br><strong>Immediate Steps:</strong><br>1. Check internet connection<br>2. Try refreshing the page (F5)<br>3. Clear browser cache<br>4. Disable VPN temporarily<br><br><strong>Browser Troubleshooting:</strong><br>• Update to latest browser version<br>• Disable ad blockers for this site<br>• Check if cookies are enabled<br>• Try different browser<br><br><strong>Network Issues:</strong><br>• Corporate firewall blocking resources<br>• DNS resolution problems<br>• Proxy server configuration<br>• Bandwidth limitations<br><br><strong>System Status:</strong><br>• Check status.arcticdata.com<br>• Planned maintenance notifications<br>• Contact IT if widespread issues<br><br><strong>Emergency Access:</strong> Use mobile.arcticdata.com for basic functionality.",
+      "tags": ["page loading", "connection issues", "firewall", "network"]
+    },
+    {
+      "id": 39,
+      "category": "training",
+      "question": "Where can I find training materials for the new system?",
+      "answer": "<strong>Training Resources Available:</strong><br><br><strong>Interactive Tutorials:</strong><br>• Built-in guided tours (click \"?\" in top menu)<br>• Step-by-step walkthroughs for common tasks<br>• Interactive practice environment<br><br><strong>Video Library:</strong><br>• 5-minute quick start guide<br>• Feature-specific tutorials<br>• Weekly \"Tips & Tricks\" videos<br>• Advanced user workshops<br><br><strong>Documentation:</strong><br>• User manual (PDF download available)<br>• Quick reference cards<br>• FAQ database<br>• Keyboard shortcuts guide<br><br><strong>Live Training:</strong><br>• Weekly group sessions (Tuesdays 2 PM)<br>• One-on-one help sessions (by appointment)<br>• Department-specific training available<br><br><strong>Access Training:</strong> Visit training.arcticdata.com or contact training@arcticdata.com",
+      "tags": ["training", "tutorials", "documentation", "help"]
+    },
+    {
+      "id": 40,
+      "category": "training",
+      "question": "How do I schedule a one-on-one training session?",
+      "answer": "<strong>Personal Training Sessions:</strong><br><br><strong>Scheduling Options:</strong><br>• Online booking: training.arcticdata.com/book<br>• Email request: training@arcticdata.com<br>• Call training team: ext. 2250<br><br><strong>Session Details:</strong><br>• Duration: 30 or 60 minutes<br>• Format: In-person, video call, or phone<br>• Customized to your needs<br>• Available Monday-Friday 9 AM - 4 PM<br><br><strong>What to Prepare:</strong><br>• Specific questions or tasks<br>• Examples of files you work with<br>• List of features you use most<br><br><strong>Follow-up Support:</strong><br>• Session recording (if requested)<br>• Customized quick reference<br>• 30-day follow-up check-in<br><br><strong>Priority Booking:</strong> Managers and department heads get priority scheduling.",
+      "tags": ["personal training", "one-on-one", "booking", "scheduling"]
+    },
+    {
+      "id": 41,
+      "category": "account",
+      "question": "How do I update my profile information?",
+      "answer": "<strong>Profile Management:</strong><br><br><strong>Update Personal Info:</strong><br>1. Click your profile picture (top right)<br>2. Select \"Profile Settings\"<br>3. Edit name, email, phone, department<br>4. Click \"Save Changes\"<br><br><strong>What You Can Change:</strong><br>• Display name and photo<br>• Contact information<br>• Time zone and language<br>• Notification preferences<br><br><strong>Requires IT Approval:</strong><br>• Email address changes<br>• Department transfers<br>• Manager assignments<br><br><strong>Profile Photo:</strong><br>• Upload JPG, PNG, or GIF<br>• Maximum 2MB file size<br>• Automatically resized to 200x200<br>• Professional photos recommended<br><br><strong>Privacy Settings:</strong> Choose who can see your profile information in the Privacy tab.",
+      "tags": ["profile", "personal information", "settings", "photo"]
+    },
+    {
+      "id": 42,
+      "category": "account",
+      "question": "Can I change my password?",
+      "answer": "<strong>Password Management:</strong><br><br><strong>Change Password:</strong><br>1. Profile Settings > Security<br>2. Click \"Change Password\"<br>3. Enter current password<br>4. Create new password (see requirements)<br>5. Confirm new password<br><br><strong>Password Requirements:</strong><br>• Minimum 12 characters<br>• Mix of uppercase and lowercase<br>• At least one number<br>• At least one special character<br>• Cannot reuse last 5 passwords<br><br><strong>Password Tips:</strong><br>• Use a passphrase instead of complex passwords<br>• Enable password manager integration<br>• Consider using two-factor authentication<br><br><strong>Forgot Password:</strong> Use \"Forgot Password\" link on login page for reset.",
+      "tags": ["password", "security", "change password", "requirements"]
+    }
+  ]
+}
